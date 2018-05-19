@@ -53,6 +53,10 @@ namespace WebApp.Controllers
             return Content(stringBuilder.ToString());
         }
 
+        /// <summary>
+        /// using Microsoft.Extensions.DependencyInjection;
+        /// </summary>
+        /// <returns></returns>
         public IActionResult GeteServicesInFunction()
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -76,7 +80,6 @@ namespace WebApp.Controllers
 
             return Content(stringBuilder.ToString());
         }
-
         
 
         public IActionResult Error()
